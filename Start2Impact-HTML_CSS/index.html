@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0"
+    />
+    <title>Introducing me</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      .vl {
+        border-left: 5px dashed #007cb9;
+        height: 1800px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-image"></header>
+    <div class="bg-text">
+      <h1>Hello, It's Martina Boccuzzi here!</h1>
+      <q>Life begins at the end of your comfort zone</q>
+    </div>
+
+    <nav class="navbar" id="myNavbar">
+      <a href="#about">About me</a>
+      <a href="#skills">Skills</a>
+      <a href="#project">Projects</a>
+      <a href="contact.html" class="right">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        ><i class="fa fa-bars"></i
+      ></a>
+    </nav>
+
+    <div class="vl"></div>
+
+    <article class="content">
+      <a name="about">
+        <section class="section about">
+          <picture>
+            <img src="./assets/images/me.jpeg" alt="photo" class="responsive" />
+            <figcaption>Me at the end of my road trip</figcaption>
+          </picture>
+
+          <div class="about-content">
+            <h2>About me</h2>
+            <p>
+              Hi, let me introduce myself. <br />
+              I am a university student, currently studying "Law and
+              Technology", aiming to become a web developer. I am passionate
+              about cryptos and trading. I love playing basketball, cooking,
+              skateboarding around my city but most of all travelling.
+              <br />I'm just at the beginning of this journey but I can't wait
+              to see what's next!
+            </p>
+          </div>
+        </section>
+      </a>
+
+      <a name="skills">
+        <section class="section skills">
+          <div class="container-1">
+            <h2>My skills</h2>
+            <p>HTML</p>
+            <div class="bar">
+              <div class="skill html">80%</div>
+            </div>
+            <p>CSS</p>
+            <div class="bar">
+              <div class="skill css">70%</div>
+            </div>
+            <p>JavaScript</p>
+            <div class="bar">
+              <div class="skill js">40%</div>
+            </div>
+          </div>
+          <div class="container-2">
+            <h2>Languages</h2>
+            <ul>
+              <li>❖ Italian: native language</li>
+              <li>❖ English: C1</li>
+              <li>❖ French: B2</li>
+              <li>❖ Spanish: B1</li>
+            </ul>
+          </div>
+        </section>
+      </a>
+
+      <a name="project">
+        <section class="section project">
+          <div>
+            <p class="project-content">
+              Altough the website you are right now is by far my best work
+              (well, I hope so), It is not the only one!
+            </p>
+            <p class="previous">
+              👉🏻
+              <a
+                class="link"
+                href="https://github.com/Martybb01/SheCodes-Bitcoin"
+                target="_blank"
+              >
+                Check my previous work</a
+              >
+            </p>
+            <div class="loader"></div>
+            <p style="font-size: 12px; text-align: center">
+              <em>loading...</em>
+            </p>
+            <p class="next">...stay tuned for more content!</p>
+          </div>
+        </section>
+      </a>
+    </article>
+    <footer class="footer">
+      <p style="margin-top: 5px">Find me on social media.</p>
+      <div class="social">
+        <a href="https://www.instagram.com/_mar.tii_/" target="_blank">
+          <img
+            src="./assets/images/instagram.svg"
+            alt="insta logo"
+            style="width: 30px; height: 30px"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/martina-boccuzzi-b57100213/"
+          target="_blank"
+        >
+          <img
+            src="./assets/images/linkedin.svg"
+            alt="linkedin logo"
+            style="width: 32px; height: 30px"
+        /></a>
+        <a href="https://github.com/Martybb01" target="_blank">
+          <img
+            src="./assets/images/github.svg"
+            alt="github logo"
+            style="width: 30px; height: 28px"
+        /></a>
+      </div>
+      <p>&copy;Martina Boccuzzi</p>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </body>
+</html>
