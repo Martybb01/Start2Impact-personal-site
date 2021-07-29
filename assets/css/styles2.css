@@ -70,7 +70,7 @@ body {
 .contact-form-header {
   margin-top: 120px;
   text-align: center;
-  background-color: beige;
+  background-color: #fde9c9;
   border: 2px solid #005689;
   border-radius: 10px;
   width: 70%;
@@ -94,7 +94,7 @@ body {
   color: #ff895d;
 }
 .contact-form {
-  background-color: beige;
+  background-color: #fde9c9;
   border: 2px solid #005689;
   border-radius: 10px;
   width: 70%;
