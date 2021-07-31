@@ -62,11 +62,11 @@ body {
   color: white;
   border: 4px double #f1f1f1;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 60%;
+  width: 70%;
   padding: 40px;
   text-align: center;
 }
@@ -115,11 +115,13 @@ body {
 .section {
   padding: 4em 1em;
   margin: 0 auto;
+  margin-top: 30px;
   max-width: 900px;
 }
 .section h2 {
   text-align: center;
   margin-bottom: 0.6em;
+  margin-top: 0.2em;
 }
 .about {
   border: 1px solid #ff895d;
@@ -129,6 +131,7 @@ body {
   border-radius: 5px;
   margin-bottom: 50px;
   background-color: #ececec;
+  flex-wrap: wrap;
 }
 picture img {
   border-radius: 20px;
@@ -165,8 +168,8 @@ picture figcaption {
 }
 .skill {
   text-align: left;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   padding-left: 5px;
   color: white;
   margin: 10px;
@@ -175,21 +178,24 @@ picture figcaption {
   width: 80%;
   background-color: #42b883;
   border-radius: 20px;
+  height: 35px;
 }
 .css {
   width: 70%;
   background-color: #cd4545;
   border-radius: 20px;
+  height: 35px;
 }
 .js {
   width: 40%;
   background-color: #0278ae;
   border-radius: 20px;
+  height: 35px;
 }
 li {
-  padding: 13px;
+  padding: 8px;
   list-style-type: none;
-  margin: 20px;
+  margin: 12px;
 }
 .project {
   border: 1px solid #ff895d;
@@ -245,7 +251,6 @@ p.project-content {
 .footer {
   background-color: #ff895d;
   height: 17%;
-  position: absolute;
   bottom: auto;
   width: 100%;
   text-align: center;
@@ -264,7 +269,8 @@ p.project-content {
 }
 @media screen and (max-width: 600px) {
   .navbar.responsive {
-    position: relative;
+    position: sticky;
+    position: -webkit-sticky;
   }
   .navbar.responsive.icon {
     position: absolute;

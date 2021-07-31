@@ -85,6 +85,7 @@ body {
   color: #005689;
   text-decoration: none;
   font-weight: 700;
+  text-align: center;
 }
 .contact-form-header a:hover {
   text-decoration: underline;
@@ -126,24 +127,11 @@ body {
   box-shadow: none;
 }
 
-.legacy-form-row {
-  border: none;
-  margin-bottom: 40px;
-}
-.legacy-form-row legend {
-  margin-bottom: 10px;
-}
-.legacy-form-row .radio-label {
-  display: block;
-  font-size: 15px;
-  padding: 0 20px 0 15px;
-}
-.legacy-form-row input[type="radio"] {
-  margin-top: 7px;
-}
-.legacy-form-row .radio-label,
-.legacy-form-row input[type="radio"] {
-  float: left;
+.form-row select {
+  width: 100%;
+  padding: 5px;
+  -webkit-appearance: none;
+  border: 1px solid #005689;
 }
 .form-row textarea {
   font-family: "Montserrat";
@@ -154,6 +142,7 @@ body {
   margin-bottom: 10px;
   padding: 15px;
   resize: none;
+  width: 100%;
 }
 .form-row button {
   font-size: 20px;
@@ -187,6 +176,7 @@ body {
   .contact-form {
     width: 800px;
   }
+
   .form-row {
     flex-direction: row;
     align-items: flex-start;
@@ -202,19 +192,13 @@ body {
     width: 120px;
     padding-right: 30px;
   }
-  .legacy-form-row {
-    margin-bottom: 10px;
+  .form-row select {
+    max-width: 300px;
   }
-  .legacy-form-row legend {
-    width: 250px;
-    padding-right: 30px;
-    float: left;
-    text-align: left;
-    padding-left: 12px;
-  }
+
   .form-row textarea {
-    width: 300px;
     margin-top: 10px;
+    max-width: 300px;
   }
   .form-row button {
     display: block;

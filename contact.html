@@ -40,19 +40,13 @@
           placeholder="mariorossi@example.com"
         />
       </div>
-      <fieldset class="legacy-form-row">
-        <legend>Are you interested in:</legend>
-        <input id="interest-1" name="interest" type="radio" value="collab" />
-        <label for="interest-1" class="radio-label">Collaboration</label>
-        <input
-          id="interest-2"
-          name="interest"
-          type="radio"
-          value="job"
-          checked
-        />
-        <label for="interest-2" class="radio-label">Job Offer</label>
-      </fieldset>
+      <div class="form-row">
+        <label for="interest">Interest:</label>
+        <select id="interest" name="interest">
+          <option value="collab">Collaboration</option>
+          <option value="job">Job Offer</option>
+        </select>
+      </div>
 
       <div class="form-row">
         <label for="message">Message</label>
