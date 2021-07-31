@@ -132,6 +132,7 @@ body {
   padding: 5px;
   -webkit-appearance: none;
   border: 1px solid #005689;
+  border-radius: 5px;
 }
 .form-row textarea {
   font-family: "Montserrat";
